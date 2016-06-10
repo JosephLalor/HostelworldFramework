@@ -3,11 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <groupId>HostelworldFramework</groupId>
-<<<<<<< HEAD
   <artifactId>PageObjects</artifactId>
-=======
-  <artifactId>pageObjects</artifactId>
->>>>>>> 9215f8baa6e2d0ee8475b4372cc4dfd04f066bf4
   <version>0.0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
 
@@ -25,10 +21,6 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
-<<<<<<< HEAD
- 
-=======
->>>>>>> 9215f8baa6e2d0ee8475b4372cc4dfd04f066bf4
     <dependency>
         <groupId>org.seleniumhq.selenium</groupId>
         <artifactId>selenium-java</artifactId>
@@ -54,11 +46,12 @@
   <version>2.3</version>
 </dependency>
 
-<dependency>
+ <dependency>
   <groupId>org.apache.logging.log4j</groupId>
-  <artifactId>log4j-core</artifactId>
+  <artifactId>log4j-api</artifactId>
   <version>2.3</version>
 </dependency>
+
 
 	<dependency>
       <groupId>mysql</groupId>

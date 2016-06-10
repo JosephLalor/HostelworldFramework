@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 /*
  * This page lists the properties returned by the search  and 
  * orders the results depending on the value chosen in the 
@@ -8,27 +7,15 @@
 package HostelworldFramework.pageObjects;
 
 import org.openqa.selenium.By;
-//import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.firefox.FirefoxDriver;
-//import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-
-
-
-//import edu.emory.mathcs.backport.java.util.Arrays;
-
-
-
 import java.math.BigDecimal;
 import java.util.ArrayList;
-//import edu.emory.mathcs.backport.java.util.Collections;
 import java.util.Collections;
 import java.util.Iterator;
 import java.util.List;
-//import java.math.BigDecimal;
 
 public class PropertyListPage {
 	
@@ -58,33 +45,14 @@ public class PropertyListPage {
 	
 	boolean listsEqual;
 	
+	BigDecimal price;
+	
 	// Non-parameter constructor
 	public PropertyListPage()
-=======
-package HostelworldFramework.pageObjects;
-
-import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-//import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.Select;
-
-
-public class PropertyListPage {
-	
-	Select sortMenu;
-	String sortListXpath = ".//*[@id='pagebody']/div[1]/div/div/div[12]/div[4]/div/div/div/div/dl[1]/dd[2]";
-	
-	WebDriver driver;
-	
-	public void PropertyListPage()
->>>>>>> 9215f8baa6e2d0ee8475b4372cc4dfd04f066bf4
 	{
 		System.out.println("PropertyListPage default constructor");
 	}
 	
-<<<<<<< HEAD
 	// Constructor with parameter
 	public PropertyListPage(WebDriver driver)
 	{
@@ -156,7 +124,7 @@ public class PropertyListPage {
 
 		while(listingsIterator.hasNext())
 		{
-			BigDecimal price;
+			
 			listingElement = listingsIterator.next();
 			listingPrices = new ArrayList<BigDecimal>();
 			listingPriceElements = listingElement.findElements(By.xpath(listingPriceXpath));
@@ -184,17 +152,5 @@ public class PropertyListPage {
 		return listsEqual;
 	}
 	
-=======
-	public void PropertyListPage(WebDriver driver)
-	{
-		System.out.println("PropertyListPage constructor");
-	}
 	
-	public void selectSortOrder(String optionValue)
-	{
-		sortMenu = new Select(driver.findElement(By.id(sortListXpath)));
-		sortMenu.selectByVisibleText(optionValue);
-	}
-
->>>>>>> 9215f8baa6e2d0ee8475b4372cc4dfd04f066bf4
 }
